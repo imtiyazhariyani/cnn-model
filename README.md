@@ -1,8 +1,10 @@
 # scGenePredix
-A deep learning model employing CNN to predict gene expression from chromatin accessibility counts using a single-cell multiomics dataset
+A deep learning model employing CNN to predict gene expression from chromatin accessibility counts using a single-cell multiomics dataset.
 
 CS284A AI in Biology & Medicine, Fall 2023
+
 Final Project - Group 4
+
 Imtiyaz Hariyani, Kevin Xu, Faisal Alshaiddi
 
 University of California, Irvine
