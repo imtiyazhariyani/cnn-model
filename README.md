@@ -12,5 +12,26 @@ University of California, Irvine
 ## **Project Description**
 This project introduces a preliminary model for predicting single-cell gene expression using chromatin accessibility counts, specifically focusing on oligodendrocyte cells in the human cerebral cortex across various age groups. Leveraging Convolutional Neural Networks (CNNs), we utilize a published multiomic single-cell dataset (snRNA-seq + snATAC-seq) to train and evaluate the model's predictive performance, utilizing Mean Squared Error (MSE) as a metric. The goal is to decipher gene expression patterns in the developing human brain, with a particular emphasis on the complex relationship between chromatin accessibility and gene expression at the single-cell level.
 
-## **Setting Up & Running the Code**
+## **Getting Started**
 
+### Prerequisites
+For running the script to train and test the model, make sure you have the following installed:
+
+1. python (≥3.10)
+2. numpy
+3. pandas
+4. scikit-learn
+5. pytorch
+
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/imtiyazhariyani/scGenePredix.git
+
+2. Create a conda environment and install the dependencies:
+   ```sh
+   conda create -n myenv python=3.10,numpy,pandas,scikit-learn,pytorch
+
+Another option for installing dependencies is to use pip after manually downloading and installing python version 3.10.
+    ```sh
+    pip install numpy,pandas,scikit-learn,pytorch
