@@ -22,6 +22,7 @@ For running the script to train and test the model, make sure you have the follo
 3. pandas
 4. scikit-learn
 5. pytorch
+6. matplotlib
 
 ### Installation
 1. Clone the repository:
@@ -30,8 +31,14 @@ For running the script to train and test the model, make sure you have the follo
 
 2. Create a conda environment and install the dependencies:
    ```sh
-   conda create -n myenv python=3.10,numpy,pandas,scikit-learn,pytorch
+   conda create -n myenv python=3.10 numpy pandas scikit-learn pytorch matplotlib
 
-Another option for installing dependencies is to use pip after manually downloading and installing python version 3.10.
-    ```sh
-    pip install numpy,pandas,scikit-learn,pytorch
+3. Activate the conda environment before running the scripts.
+   ```sh
+   conda activate myenv
+
+Alternatively, you can install dependencies using pip after setting up python version 3.10.
+
+```sh
+pip install numpy,pandas,scikit-learn,torch,matplotlib
+
