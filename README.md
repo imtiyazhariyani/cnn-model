@@ -49,16 +49,16 @@ For running the script to train and test the model, make sure you have the follo
 ### Obtaining the Dataset & Preprocessing
    To obtain & preprocess the data, run the following script to download the h5ad files, process and obtain the dataset, filter for X chromosome genes only, and add gene coordinates
      
-      ```sh
+     ```sh
       preprocessing.sh
 
 ### Training the Model 
    To train the model, run the python script below.
       
-      ```sh
+      ```python
       main_train_validate.py
 
-   If you skipped the previous step to obtain & preprocess the dataset, you can download the final dataset from here: https://drive.google.com/file/d/1fUkNrLLetrGrObsPIWYBIuZVvR0BfCzH/view?usp=sharing
+If you skipped the previous step to obtain & preprocess the dataset, you can download the final dataset from here: https://drive.google.com/file/d/1fUkNrLLetrGrObsPIWYBIuZVvR0BfCzH/view?usp=sharing
    
 ## **Testing the Existing Model Trained using the Oligeodendrocyte Cells**
 
