@@ -69,7 +69,11 @@ To train the model, run the python script below.
 
      python main_train_validate.py
 
-## **Testing the Existing Model Trained using the Oligeodendrocyte Cells**
+## **Testing the Existing Model Trained using the Oligodendrocyte Cells**
+
+Download the test dataset (unseen data from oligodendrocyte cells) from [here] and then run the python script below.
+
+     python main_test.py
 
 ## **Disclaimer**
 The code is still at a preliminary stage and should not be used for the analysis of single-cell data.
