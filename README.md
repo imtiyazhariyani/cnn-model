@@ -37,7 +37,7 @@ For running the script to train and test the model, make sure you have the follo
    ```sh
    conda activate myenv
 
-Alternatively, you can install dependencies using pip after setting up python version 3.10.
+   Alternatively, you can install dependencies using pip after setting up python version 3.10.
    ```sh
    pip install numpy,pandas,scikit-learn,torch,matplotlib
 
