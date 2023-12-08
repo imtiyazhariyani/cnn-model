@@ -37,12 +37,11 @@ For running the script to train and test the model, make sure you have the follo
    ```sh
    conda activate myenv
 
-
-## **Disclaimer**
-The code is still at a preliminary stage and should not be used for the analysis of single-cell data.
-
 Alternatively, you can install dependencies using pip after setting up python version 3.10.
 
 ```sh
 pip install numpy,pandas,scikit-learn,torch,matplotlib
 
+
+## **Disclaimer**
+The code is still at a preliminary stage and should not be used for the analysis of single-cell data.
