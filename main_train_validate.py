@@ -14,7 +14,7 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
 #comment out if it is already loaded
-df = pd.read_csv('/finaldataset_oligodendrocytes.csv') #change file path to what you have
+df = pd.read_csv('finaldataset_oligodendrocytes.csv')
 
 
 class PairedCNNModel(nn.Module):
@@ -33,7 +33,7 @@ class PairedCNNModel(nn.Module):
         self.dropout2 = nn.Dropout(dropout_rate)
         self.pool2 = nn.MaxPool1d(2)
 
-        self.fc1 = nn.Linear(10432, hidden_size)
+        self.fc1 = nn.Linear(31296, hidden_size)
         self.batch_norm3 = nn.BatchNorm1d(hidden_size)
         self.dropout3 = nn.Dropout(dropout_rate)
 
@@ -101,7 +101,7 @@ class GeneExpressionPredictor:
         additional_features = ['age_group', 'sex']
 
         # Use DataFrame to get additional categorical features
-        additional_categorical_features = list(set(additional_features) & set(self.df.columns))
+        additional_categorical_features = list(set(additional_features))
 
         # Fill missing values in specific columns with a default value (e.g., 0)
         #default_value = 0
@@ -110,10 +110,16 @@ class GeneExpressionPredictor:
 
         # Identify chromatin accessibility columns
         chromatin_accessibility_columns = self.df.filter(like='_ChromatinAccessibility').columns
+        
+        # Identify gene start columns
+        start_columns = self.df.filter(like='_start_position').columns
+        
+        # Identify gene stop columns
+        stop_columns = self.df.filter(like='_end_position').columns
 
         # Combine all feature names (numeric, categorical, and additional features)
-        feature_columns = chromatin_accessibility_columns.union(additional_categorical_features)
-
+        feature_columns = (chromatin_accessibility_columns.union(additional_categorical_features).union(start_columns).union(stop_columns)
+)
         # Select features and target features
         X = self.df[feature_columns].copy()
         y = self.df.filter(like='_Expression').copy()
@@ -183,6 +189,7 @@ class GeneExpressionPredictor:
         plt.xlabel('Epoch')
         plt.ylabel('Loss')
         plt.legend()
+        plt.ylim(0, 0.5)  # Adjust y-axis limits
         plt.show()
 
         print("Training complete.")
@@ -206,21 +213,7 @@ class GeneExpressionPredictor:
 
         print(f'Test Loss: {test_loss.item()}')
 
-        # Print real-world and predicted gene expression for the first 10 cells
-        real_gene_expression = self.y_test_tensor.detach().numpy()
-        predicted_gene_expression = test_outputs.detach().numpy()
-
-        #print("Real Gene Expression for the First 10 Cells:")
-        #print(real_gene_expression)
-
-        #print("\nPredicted Gene Expression for the First 10 Cells:")
-        #print(predicted_gene_expression)
-
-
         return test_loss.item()
-
-# Load the data
-#df = pd.read_csv('sample data - Sheet1.csv')
 
 # Create an instance of GeneExpressionPredictor
 gene_predictor = GeneExpressionPredictor(df)
