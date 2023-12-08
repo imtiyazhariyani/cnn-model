@@ -50,6 +50,13 @@ To obtain & preprocess the data, run the following script to download the h5ad f
     
     ./preprocessing.sh
 
+The following scripts will run (do not run individually if executing the bash script preprocessing.sh):
+    wget https://datasets.cellxgene.cziscience.com/1e244d0d-b3d3-419c-8e2e-ed8456ba471c.h5ad
+    wget https://datasets.cellxgene.cziscience.com/d5adf2ac-95f8-48df-b6f8-674d44df6529.h5ad
+    python scanpy_process.py
+    R chrFilter.R
+    python add_coordinates.py
+
 ### Training the Model 
 If you skipped the previous step to obtain & preprocess the dataset, you can download the final dataset from [here](https://drive.google.com/file/d/1fUkNrLLetrGrObsPIWYBIuZVvR0BfCzH/view?usp=sharing) 
 
