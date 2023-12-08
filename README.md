@@ -71,7 +71,7 @@ To train the model, run the python script below.
 
 ## **Testing the Existing Model Trained using the Oligodendrocyte Cells**
 
-Download the test dataset (unseen data from oligodendrocyte cells) from [here] and then run the python script below.
+Using the test dataset - final_test.csv (unseen data from oligodendrocyte cells), run the python script below.
 
      python main_test.py
 
