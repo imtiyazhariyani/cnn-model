@@ -40,18 +40,21 @@ For running the script to train and test the model, make sure you have the follo
    conda activate myenv
 
    Alternatively, you can install dependencies using pip after setting up python version 3.10.
-      ```sh
-      pip install numpy,pandas,scikit-learn,torch,matplotlib
+
+   ```sh
+   pip install numpy,pandas,scikit-learn,torch,matplotlib
 
 ## **Training & Validating the Model**
 
 ### Obtaining the Dataset & Preprocessing
    To obtain & preprocess the data, run the following script to download the h5ad files, process and obtain the dataset, filter for X chromosome genes only, and add gene coordinates
+     
       ```sh
       preprocessing.sh
 
 ### Training the Model 
    To train the model, run the python script below.
+      
       ```sh
       main_train_validate.py
 
