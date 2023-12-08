@@ -10,7 +10,7 @@ Imtiyaz Hariyani, Kevin Xu, Faisal Alshaiddi
 University of California, Irvine
 
 ## **Project Description**
-This project introduces a preliminary model for predicting single-cell gene expression using chromatin accessibility counts, specifically focusing on oligodendrocyte cells in the human cerebral cortex across various age groups. Leveraging Convolutional Neural Networks (CNNs), we utilize a published multiomic single-cell dataset (snRNA-seq + snATAC-seq) to train and evaluate the model's predictive performance, utilizing Mean Squared Error (MSE) as a metric. The goal is to decipher gene expression patterns in the developing human brain, with a particular emphasis on the complex relationship between chromatin accessibility and gene expression at the single-cell level.
+This project introduces a preliminary model for predicting single-cell gene expression using chromatin accessibility counts, specifically focusing on oligodendrocyte cells in the human cerebral cortex across various age groups. Leveraging Convolutional Neural Networks (CNNs), we utilize a published multiomic single-cell dataset (snRNA-seq + snATAC-seq) (1) to train and evaluate the model's predictive performance, utilizing Mean Squared Error (MSE) as a metric. The goal is to decipher gene expression patterns in the developing human brain, with a particular emphasis on the complex relationship between chromatin accessibility and gene expression at the single-cell level.
 
 ## **Getting Started**
 
@@ -43,3 +43,7 @@ For running the script to train and test the model, make sure you have the follo
 
 ## **Disclaimer**
 The code is still at a preliminary stage and should not be used for the analysis of single-cell data.
+
+## **References**
+1. Zhu, K., Bendl, J., Rahman, S., Vicari, J. M., Coleman, C., Clarence, T., ... & Roussos, P. (2023). Multi-omic profiling of the developing human cerebral cortex at the single-cell level. Science Advances, 9(41), eadg3754.
+
