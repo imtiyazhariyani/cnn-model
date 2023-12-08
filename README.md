@@ -17,7 +17,7 @@ The model is built exclusively using genes present on the X chromosome to captur
 ## **Getting Started**
 
 ### Prerequisites
-For running the script to train and test the model, make sure you have the following installed:
+For running the script to train and test the model, you need to have the following installed:
 
 1. python (≥3.10)
 2. numpy
