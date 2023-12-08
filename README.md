@@ -39,25 +39,23 @@ For running the script to train and test the model, make sure you have the follo
    ```sh
    conda activate myenv
 
-  Alternatively, you can install dependencies using pip after setting up python version 3.10.
+Alternatively, you can install dependencies using pip after setting up python version 3.10.
     ```sh
     pip install numpy,pandas,scikit-learn,torch,matplotlib
 
 ## **Training & Validating the Model**
 
 ### Obtaining the Dataset & Preprocessing
-   To obtain & preprocess the data, run the following script to download the h5ad files, process and obtain the dataset, filter for X chromosome genes only, and add gene coordinates
-     
-     ```sh
-     preprocessing.sh
+To obtain & preprocess the data, run the following script to download the h5ad files, process and obtain the dataset, filter for X chromosome genes only, and add gene coordinates
+    ```sh
+    preprocessing.sh
 
 ### Training the Model 
-   To train the model, run the python script below.
-      
+To train the model, run the python script below.
      ```python
      main_train_validate.py
 
-If you skipped the previous step to obtain & preprocess the dataset, you can download the final dataset from [here]:(https://drive.google.com/file/d/1fUkNrLLetrGrObsPIWYBIuZVvR0BfCzH/view?usp=sharing) 
+If you skipped the previous step to obtain & preprocess the dataset, you can download the final dataset from [here](https://drive.google.com/file/d/1fUkNrLLetrGrObsPIWYBIuZVvR0BfCzH/view?usp=sharing) 
    
 ## **Testing the Existing Model Trained using the Oligeodendrocyte Cells**
 
