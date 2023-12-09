@@ -27,6 +27,7 @@ For running the script to train and test the model, you need to have the followi
 6. matplotlib
 
 If you will preprocess the data, a few additional software is required:
+
 7. R (≥4.2.2)
 8. wget
 9. anndata
