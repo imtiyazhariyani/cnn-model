@@ -63,7 +63,7 @@ The following scripts will run (do not run individually if executing the bash sc
     
     wget https://datasets.cellxgene.cziscience.com/d5adf2ac-95f8-48df-b6f8-674d44df6529.h5ad
     
-    python scanpy_process.py
+    python anndata_process.py
     
     R chrFilter.R
     
