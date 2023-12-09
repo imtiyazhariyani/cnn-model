@@ -10,7 +10,7 @@ wget https://datasets.cellxgene.cziscience.com/d5adf2ac-95f8-48df-b6f8-674d44df6
 
 #Part 2 - Use Scanpy to process the data and obtain a dataset for model training & evaluation
 
-python scanpy_process.py
+python anndata_process.py
 
 #Part 3 - Run the R script chrFilter.R to obtain a list of genes on the X chromosome
 
