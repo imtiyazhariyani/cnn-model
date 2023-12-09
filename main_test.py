@@ -171,11 +171,11 @@ class GeneExpressionPredictor:
         plt.show()
 
         print("Training complete.")
-        torch.save(model.state_dict(), 'trained_model_oligodendroyctes.pth')
-        print("Trained model saved to 'trained_model_oligodendroyctes.pth'")
+        torch.save(model.state_dict(), 'trained_model_oligodendrocytes.pth')
+        print("Trained model saved to 'trained_model_oligodendrocytes.pth'")
         self.model = model
 
-    def load_model(self, model_path='trained_model_oligodendroyctes.pth'):
+    def load_model(self, model_path='trained_model_oligodendrocytes.pth'):
         # Pass the input_size to the model during initialization
         input_size = 31296
         self.model = PairedCNNModel(input_size=input_size, hidden_size=128, dropout_rate=0.2)
