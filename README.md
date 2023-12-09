@@ -33,15 +33,15 @@ For running the script to train and test the model, you need to have the followi
 
 2. Create a conda environment and install the dependencies:
    ```sh
-   conda create -n myenv python=3.10 numpy pandas scikit-learn pytorch matplotlib
+   conda create -n myenv python=3.10 numpy pandas scikit-learn pytorch matplotlib r-essentials r-base anndata
 
 3. Activate the conda environment before running the scripts.
    ```sh
    conda activate myenv
 
-Alternatively, you can install dependencies using pip after setting up python version 3.10.    
+Alternatively, you can install dependencies using pip after setting up wget, python version 3.10 and the latest version of R.    
   
-    pip install numpy pandas scikit-learn torch matplotlib
+    pip install numpy pandas scikit-learn torch matplotlib anndata
 
 ## **Training & Validating the Model**
 
