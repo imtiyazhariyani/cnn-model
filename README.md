@@ -26,6 +26,12 @@ For running the script to train and test the model, you need to have the followi
 5. pytorch
 6. matplotlib
 
+If you will preprocess the data, a few additional software is required:
+7. R (≥4.2.2)
+8. wget
+9. anndata
+10. bioMart (R package)
+
 ### Installation
 1. Clone the repository:
    ```sh
@@ -39,7 +45,7 @@ For running the script to train and test the model, you need to have the followi
    ```sh
    conda activate myenv
 
-Alternatively, you can install dependencies using pip after setting up wget, python version 3.10 and the latest version of R.    
+Alternatively, you can install dependencies using pip after setting up wget, python version 3.10 and R 4.2.2.    
   
     pip install numpy pandas scikit-learn torch matplotlib anndata
 
